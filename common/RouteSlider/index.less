@@ -1,0 +1,102 @@
+.router_wrapper {
+  position: relative;
+  width: 100%;
+  height:100%;
+
+  .router {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.push_appear {
+  opacity: 0;
+}
+
+.push_appear_active {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.push_appear_done {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.push_enter {
+  z-index: 9;
+  box-shadow: -10px 0 3px #efefef;
+  transform: translateX(100%) translateZ(0);
+}
+
+.push_enter_active {
+  z-index: 9;
+  transform: translateX(0) translateZ(0);
+  box-shadow: -10px 0 3px #efefef;
+  transition: all .5s;
+}
+
+.push_enter_done {
+  z-index: 9;
+  transform: translateX(0) translateZ(0);
+  transition: all .5s;
+}
+
+.push_exit {
+  z-index: 8;
+  transform: translateX(0) translateZ(0);
+}
+
+.push_exit_active {
+  z-index: 8;
+  transform: translateX(-50%) translateZ(0);
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+}
+
+.push_exit_done {
+  transform: translateX(-50%) translateZ(0);
+  transition: all 0.5s;
+}
+
+.pop_enter {
+  z-index: 8;
+  transform: translateX(-100%) translateZ(0);
+}
+
+.pop_enter_active {
+  z-index: 8;
+  transform: translateX(0) translateZ(0);
+  transition: all 0.5s;
+}
+
+.pop_enter_done {
+  transform: translateX(0) translateZ(0);
+  transition: all 0.5s;
+}
+
+.pop_exit {
+  z-index: 9;
+  box-shadow: -10px 0 3px #efefef;
+  transform: translateX(0) translateZ(0);
+}
+
+.pop_exit_active {
+  z-index: 9;
+  box-shadow: -10px 0 3px #efefef;
+  transform: translateX(100%) translateZ(0);
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+}
+
+.pop_exit_done {
+  z-index: 9;
+  transform: translateX(100%) translateZ(0);
+  transition: all 0.5s;
+}

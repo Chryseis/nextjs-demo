@@ -9,6 +9,7 @@ module.exports=withImages(withLess({
       importLoaders: 1,
       localIdentName: "[local]___[hash:base64:5]",
    },
+   pageExtensions: ['jsx'],
    webpack(config, options){
       config.resolve.alias['@']=path.resolve(__dirname)
       return config
