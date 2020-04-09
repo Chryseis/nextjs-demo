@@ -1,0 +1,25 @@
+.fold_enter {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+}
+
+.fold_enter_active {
+  max-height: 1000px;
+  opacity: 1;
+  transform: translateZ(0);
+  transition: all 0.5s ease-in;
+}
+
+.fold_exit {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.fold_exit_active {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateZ(0);
+  transition: all 0.5s ease-in-out;
+}

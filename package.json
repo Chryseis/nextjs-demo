@@ -1,0 +1,59 @@
+{
+  "name": "skio-h5-ssr",
+  "version": "1.0.0",
+  "description": "ssr",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "export": "next build&&next export",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "next",
+    "ssr"
+  ],
+  "author": "allen",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "next": "^9.3.1",
+    "next-redux-wrapper": "^5.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-transition-group": "^4.3.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@zeit/next-less": "^1.0.1",
+    "husky": "^4.2.3",
+    "less": "^3.11.1",
+    "lint-staged": "^10.0.9",
+    "next-images": "^1.4.0",
+    "postcss-pxtorem": "^5.1.1",
+    "prettier": "^2.0.2"
+  },
+  "browserslist": [
+    "> 1% in CN",
+    "last 2 versions",
+    "Firefox >= 20",
+    "Safari >= 6",
+    "Explorer >= 9",
+    "Chrome >= 12",
+    "ChromeAndroid >= 4.4",
+    "iOS >= 6",
+    "and_uc >= 9.1"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,less,css,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
