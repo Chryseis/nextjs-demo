@@ -2,8 +2,7 @@
  * Created by Allen on 2020-03-11
  */
 import styles from './index.less'
-import React, {useState, useEffect} from 'react'
-import {getQueryString} from '@/utils'
+import React from 'react'
 import detailConfig from './config'
 
 function SupportDetail(props) {

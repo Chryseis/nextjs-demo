@@ -84,8 +84,7 @@ function Support(props) {
     )
 }
 
-Support.getInitialProps = async({req}) => {
-    const isServer=!!req
+Support.getInitialProps = async({isServer,req}) => {
 
     return {
         userAgent:isServer?req.headers['user-agent']:navigator.userAgent

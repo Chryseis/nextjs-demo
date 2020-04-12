@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && next start",
     "export": "next build&&next export",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +19,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.6",
     "classnames": "^2.2.6",
-    "next": "^9.3.4",
+    "next": "^9.3.5-canary.8",
     "next-redux-wrapper": "^5.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

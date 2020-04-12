@@ -21,11 +21,11 @@ export default ({ children }) => {
             appearActive: styles.push_appear_active,
             appearDone: styles.push_appear_done,
             enter: naviAction === 'push' ? styles.push_enter : styles.pop_enter,
-            enterActive: naviAction == 'push' ? styles.push_enter_active : styles.pop_enter_active,
-            enterDone: naviAction == 'push' ? styles.push_enter_done : styles.pop_enter_done,
-            exit: naviAction == 'push' ? styles.push_exit : styles.pop_exit,
-            exitActive: naviAction == 'push' ? styles.push_exit_active : styles.pop_exit_active,
-            exitDone: naviAction == 'push' ? styles.push_exit_done : styles.pop_exit
+            enterActive: naviAction === 'push' ? styles.push_enter_active : styles.pop_enter_active,
+            enterDone: naviAction === 'push' ? styles.push_enter_done : styles.pop_enter_done,
+            exit: naviAction === 'push' ? styles.push_exit : styles.pop_exit,
+            exitActive: naviAction === 'push' ? styles.push_exit_active : styles.pop_exit_active,
+            exitDone: naviAction === 'push' ? styles.push_exit_done : styles.pop_exit
           }
         })
       }}
@@ -37,7 +37,7 @@ export default ({ children }) => {
           enter: 500,
           exit: 500
         }}
-        key={router.pathname + router.query}
+        key={router.asPath}
       >
         <div className={styles.router}>
             {children}

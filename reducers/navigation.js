@@ -31,6 +31,7 @@ const reducerMap = {
             _pathQueue.splice(index + 1)
             naviAction = 'pop'
           } else {
+            console.log('init')
             _pathQueue.push(path)
             naviAction = 'push'
           }
@@ -44,6 +45,7 @@ const reducerMap = {
       }
     } else {
       _pathQueue.push(path)
+      naviAction = 'push'
     }
 
     return { pathQueue: _pathQueue, search, naviAction }

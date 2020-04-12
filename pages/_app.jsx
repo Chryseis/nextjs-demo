@@ -35,7 +35,7 @@ class MyApp extends App {
                 <meta charSet="UTF-8"/>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
                 <meta name="viewport" content="width=device-width, initialScale=1, maximumScale=1.0, userScalable=0"/>
-                <script src="https://h5cdn.skio.cn/js/flexible.js"></script>
+                <script src="http://static.chryseis.cn/flexible.js"></script>
             </Header>
             <Provider store={store}>
                 <RouteSlider>
