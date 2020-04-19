@@ -1,4 +1,4 @@
-import { navigation } from '../constants/actionType'
+import { navigation } from '@/constants/actionType'
 
 export function editTitle(title) {
   return {

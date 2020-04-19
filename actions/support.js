@@ -1,4 +1,4 @@
-import { support } from '../constants/actionType'
+import { support } from '@/constants/actionType'
 
 export function handleAccordion(index) {
   return {
